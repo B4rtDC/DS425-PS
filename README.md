@@ -4,7 +4,7 @@ This page contains the support material for the practical sessions of the course
 
 Other related material for the course can be found on BelADL.
 
-We will use Julia 1.5.3 (also on your CDN laptop) in combination with Pluto notebooks. You can check you are up-to-date with the dependencies by running the `config.jl` file which will updated on a regular basis. We use a specific virtual environment for this course (located in this folder). If you want to start the Pluto server, you can simply run `start.jl`. To sync with the latest version on GitHub, you can run `update.jl`
+We will use Julia 1.5.3 (also on your CDN laptop) in combination with Pluto notebooks. You can check you are up-to-date with the dependencies by running the `config.jl` file which will updated on a regular basis. We use a specific virtual environment for this course (located in this folder). If you want to start the Pluto server, you can simply run `start.jl`. To sync with the latest version on GitHub, you can run `update.jl` (this should work on every computer, the only condition is that you are not using the CDN network).
  
 In a terminal (in the folder):
 ```
