@@ -8,3 +8,5 @@ git() do git
     run(`$git config pull.rebase false`)
     run(`$git pull`)
 end
+
+include("config.jl")
