@@ -124,7 +124,7 @@ Consider a modified version of the simple vacuum environment in which the geogra
 
 # ╔═╡ Cell order:
 # ╠═88af7dc6-70fd-11eb-3af2-f7a194340290
-# ╟─bb6ed424-70fc-11eb-2a2a-ff0556bb7cda
+# ╠═bb6ed424-70fc-11eb-2a2a-ff0556bb7cda
 # ╠═9fd46218-70fe-11eb-1ddd-132f13e0611c
 # ╟─ab564aec-70ff-11eb-0d36-cd95fb8def23
 # ╟─f2915910-70ff-11eb-2f60-e9963db3aaeb
