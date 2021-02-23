@@ -495,6 +495,12 @@ git-tree-sha1 = "fe1fdbff28f179216a1e756bd5494057b036945f"
 uuid = "c3e4b0f8-55cb-11ea-2926-15256bba5781"
 version = "0.12.20"
 
+[[PlutoUI]]
+deps = ["Base64", "Dates", "InteractiveUtils", "Logging", "Markdown", "Random", "Suppressor"]
+git-tree-sha1 = "45ce174d36d3931cd4e37a47f93e07d1455f038d"
+uuid = "7f904dfe-b85e-4ff6-b463-dae2292396a8"
+version = "0.7.1"
+
 [[Printf]]
 deps = ["Unicode"]
 uuid = "de0858da-6303-5e67-8744-51eddeeeb8d7"
@@ -609,6 +615,11 @@ deps = ["Adapt", "DataAPI", "Tables"]
 git-tree-sha1 = "26ea43b4be7e919a2390c3c0f824e7eb4fc19a0a"
 uuid = "09ab397b-f2b6-538f-b94a-2f83cf4a842a"
 version = "0.5.0"
+
+[[Suppressor]]
+git-tree-sha1 = "a819d77f31f83e5792a76081eee1ea6342ab8787"
+uuid = "fd094767-a336-5f1f-9728-57cf17d0bbfb"
+version = "0.2.0"
 
 [[TableTraits]]
 deps = ["IteratorInterfaceExtensions"]
