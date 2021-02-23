@@ -12,8 +12,8 @@ this environment will be activated automatically.
 2. Start the Pluto server by running `start.jl`.
 
 ## Getting updates
-To sync with the latest version on GitHub, you can run `update.jl`. This should work on every computer, the only condition is that you are not using the CDN network.
- 
+To sync with the latest version on GitHub, you can run `update.jl`. This should work on every computer. When connected to CDN by VPN, it should work. If you are working on the CDN machine, you need to pass your credentials over the proxy. This can be done by modifying and uncommenting line 10 in `update.jl`.
+
 In a terminal (in the folder):
 ```
 julia config.jl
