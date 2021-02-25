@@ -78,8 +78,15 @@ function treesearch(p::T, r::N; goaltest::Function,
     @warn "failed to find a solution"
 end;
 
+using BenchmarkTools
+using Logging
+disable_logging(Logging.Info)
+myproblem = GProblem("BEEBEACAEC", "E")
+root_node = GNode(myproblem.initialstate, nothing, nothing, 0)
+@btime treesearch(myproblem, root_node, goaltest=Ggoaltest, 
+            findactions=Gfindactions, applyaction=Gapplyaction, solution=Gsolution)
 
 myproblem = GProblem("ABBC", "E")
 root_node = GNode(myproblem.initialstate, nothing, nothing, 0)
-@info treesearch(myproblem, root_node, goaltest=Ggoaltest, 
+@btime treesearch(myproblem, root_node, goaltest=Ggoaltest, 
             findactions=Gfindactions, applyaction=Gapplyaction, solution=Gsolution)
