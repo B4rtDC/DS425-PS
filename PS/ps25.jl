@@ -19,7 +19,7 @@ struct GProblem <: Problem
     initialstate::String
     goalstate::String
 end
-
+# update!!!
 struct GNode 
     state::String
     parent::Union{GNode, Nothing}
