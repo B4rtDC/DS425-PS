@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.12.20
+# v0.12.21
 
 using Markdown
 using InteractiveUtils
@@ -595,6 +595,9 @@ begin
 	@info *("Backtracking search with inference (forward checking), $(australia_csp.nassigns) variables assigned\n", ["\t$(key): $(val)\n" for (key, val) in australia_csp.current_domains]...)
 end
 
+# ╔═╡ 4f044672-7fe1-11eb-2a21-dbd705daf5e8
+australia_csp.vars
+
 # ╔═╡ Cell order:
 # ╠═902eeb2e-71d2-11eb-3322-53451cb23bf2
 # ╟─d0fa06da-71d1-11eb-2d00-97ea31bbb5ed
@@ -608,3 +611,4 @@ end
 # ╠═8a65d932-71df-11eb-0a50-a30132237e47
 # ╠═9b4a7ab6-71df-11eb-2324-b115dd57c628
 # ╠═b9bafd2c-71df-11eb-05ee-55793f3a78fa
+# ╠═4f044672-7fe1-11eb-2a21-dbd705daf5e8
