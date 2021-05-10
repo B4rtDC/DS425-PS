@@ -1,0 +1,29 @@
+Experiment confirms plan for quantum-coded messages
+Scheme allows sending lots of secret data with short decoding key
+
+Researchers have built a modern-day Enigma machine that relies on the quirky laws of quantum mechanics instead of the rotors and levers of the famous World War II–era code machines. It’s the first experiment to show that it’s possible to send large amounts of secure quantum data protected by a much shorter secret key, the team reports August 12 in Physical Review A.
+
+Encryption usually relies on a secret key that’s shared between two parties. The sender uses the key to scramble the message so it looks random to an outsider; the receiver uses the key to unscramble it. An eavesdropper who doesn’t have the key can’t read the garbled message.
+
+Spies can use quantum mechanics to generate extremely secure keys that can’t be cracked by even the most powerful computers. Instead of a string of 1s and 0s, quantum keys use the spins of photons, tiny packages of light. But in order to work, those keys need to be at least as long as the message they’re protecting.
+
+“It’s very powerful, but it’s very impractical if you’re trying to transmit a dictionary or a volume of information,” says Daniel Lum, a quantum physicist at the University of Rochester in New York who led the study.  
+
+By encoding the message itself (and not just the key) in a quantum system, it’s theoretically possible to protect a long string of data using a much shorter key. The idea, called quantum data locking, was first proposed about 10 years ago by several different groups of scientists. But nobody had experimentally tested it until now because of the challenges of actually sending inherently unstable quantum information.
+
+Lum and his colleagues built a setup that shoots a photon at a detector. To disguise the message encoded inside the photon, the sender scrambles the wave pattern of the photon so that it can’t be focused onto a single point on the detector. The receiver knows the equation that the sender has used to disguise the wave and can therefore use the inverse function to cast off that disguise. Then the photon will land at the spot on the detector where it was intended to, and the receiver can read the message.
+
+The eavesdropper doesn’t know the equation, which acts like a key. Testing various different keys to try to find the right one won’t work in a quantum system; one wrong guess messes up the message because measuring a quantum system changes it. And there are so many different ways the message could be scrambled that the odds of guessing the correct function with one try are practically zero.
+
+The sender still needs to use some secure method to get the first key to the receiver. But once that ball is rolling, the sender can embed a new, shorter key in each quantum message, which the receiver can then use to unlock the next missive.
+
+Quantum data locking does have some potential drawbacks. The experiment assumes that the eavesdropper has infinite computing power but limited quantum memory and so can’t collect lots of information over time about the messages going through and put it all together to crack the code.
+
+“In terms of people’s technical capabilities, this is a very reasonable assumption,” says Seth Lloyd, a quantum mechanical engineer at MIT who also worked on the project. But it’s not absolutely fail-safe.
+
+Some scientists think it would be difficult to apply this kind of data locking in the real world.
+
+“From the pure quantum mechanics science point of view, what’s really neat about data locking is that it does allow you to encrypt at essentially zero cost,” says Patrick Hayden, a quantum physicist at Stanford University who wasn’t involved in the study. “But there are caveats to it. And in reality, the type of security that you achieve this way is delicate.” Hayden thinks that most people wanting to be absolutely certain that their message remains private would probably pick a different quantum protocol.
+
+The team also sent their messages through the air, not through fiber optics, Lum notes. Air isn’t a good medium for long-distance quantum transmission. A second paper also published August 12 in Physical Review A demonstrates quantum data locking through fiber optics.  But because quantum data is easily lost during long-distance transmission, this setup is more efficient than other encryption techniques only when sending longer messages.
+
