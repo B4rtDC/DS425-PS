@@ -469,7 +469,7 @@ begin
 	# demo
 	p1 = ['a';'b';'c']
 	p2 = ['d';'e';'f']
-	mate(p1,p2)
+	mate(p1,p2, pmut=1)
 end
 
 # ╔═╡ 47153f8e-8572-11eb-1310-c932bd478721
@@ -696,6 +696,7 @@ begin
 	let
 		# Longer route does not necessarily imply greater time for offspring generation
 		# with the partial crossover algorithm (why could that be?)
+		@info "100 items"
 		N = 100
 		p1 = collect(1:N)
 		p2 = sample(p1,N,replace=false)
@@ -820,8 +821,8 @@ end
 # ╔═╡ Cell order:
 # ╟─774fa124-8560-11eb-2317-53b0d106b67a
 # ╠═bca1c92c-8561-11eb-0420-6f0123bacb7f
-# ╟─2b5e6876-8561-11eb-0685-dfe1cca39c45
-# ╟─4e190a2e-8561-11eb-3759-795e3bb4d8d2
+# ╠═2b5e6876-8561-11eb-0685-dfe1cca39c45
+# ╠═4e190a2e-8561-11eb-3759-795e3bb4d8d2
 # ╠═b49f0528-8561-11eb-36a7-fd42574edc81
 # ╠═d5019d8a-8561-11eb-2a43-a9ce616532f5
 # ╠═728b94da-8566-11eb-1b02-e94c64424845
@@ -838,7 +839,7 @@ end
 # ╠═ef64ca86-856c-11eb-0cd0-178565e85576
 # ╠═57726a64-856d-11eb-2b37-877202c47ede
 # ╠═d70478c8-856d-11eb-3f27-0b565955b6ed
-# ╠═934aa9e4-856e-11eb-1924-fd1df8fd3fe2
+# ╟─934aa9e4-856e-11eb-1924-fd1df8fd3fe2
 # ╟─8753fd9a-856f-11eb-2d91-13657e302031
 # ╠═48c05e06-8570-11eb-0367-1f3db0aa20d0
 # ╠═6faf987e-8570-11eb-1861-7de0f661bd63

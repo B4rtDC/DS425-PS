@@ -395,43 +395,69 @@ What are the outcomes? Is this to be expected?
 """
 
 # ╔═╡ 15b8bc4a-8b08-11eb-1991-95df70d5d7ee
-let
-	function playintelligent(n=10)
-		for _ = 1:n
-			G = TicTacToeGame()
-			state = G.initial
-			for _ in 1:9
-				action = minimax_decision(state, G)
-				state = result(G, state, action)
-			end
-			msg = ifelse(state.utility == 0, "it's a draw", state.utility == 1 ? "X has won" : "O has won")
-			println("Game state: $(msg)")
-		end
-	end
-	
-	function playagainstrandom(n=10)
-		for _ = 1:n
-			G = TicTacToeGame()
-			state = G.initial
-			for _ in 1:9
-				if state.turn == "X"
-					action = minimax_decision(state, G)
-					state = result(G, state, action)
+
+
+# ╔═╡ beaa55c2-896c-11eb-30b8-7bfafa9b7441
+begin
+	"""
+		playintelligentgame(;method::Function=minimax_decision)
+
+	Play a TicTacToe game between two intelligent players.
+
+	method: `minimax_decision` or `alphabeta_full_search`
+	"""
+	function playintelligentgame(;method::Function=minimax_decision)
+		G = TicTacToeGame()
+		state = G.initial
+		for _ in 1:9
+			move = method(state, G)
+			state = result(G, state, move)
+			if terminal_test(G,state)
+				if state.utility == 0
+					println("It's a draw!")
 				else
-					action = rand(actions(G, state))
-					state = result(G, state, action)
+					println("winner: $(state.turn == "X" ? "O" : "X")")
 				end
+				break
 			end
-			msg = ifelse(state.utility == 0, "it's a draw", state.utility == 1 ? "X has won" : "O has won")
-			println("Game state: $(msg)")
 		end
+		display(G,state)
 	end
 	
-	playagainstrandom()
+	"""
+		playdumbgame(;method::Function=minimax_decision)
+
+	Play a TicTacToe game between a dumb (random moves) and an intelligent player.
+
+	method: `minimax_decision` or `alphabeta_full_search`
+	"""
+	function playdumbgame(;method::Function=minimax_decision)
+		G = TicTacToeGame()
+		state = G.initial
+		for _ in 1:9
+			move = state.turn == "X" ? rand(actions(G, state)) : method(state, G)
+			state = result(G, state, move)
+			if terminal_test(G,state)
+				if state.utility == 0
+					println("It's a draw!")
+				else
+					println("winner: $(state.turn == "X" ? "O" : "X")")
+				end
+				break
+			end
+		end
+		display(G,state)
+	end
 end
 
-# ╔═╡ a5c7dd32-8b14-11eb-197f-895819e95ff5
-G
+# ╔═╡ e6309ebc-896c-11eb-2a7e-2fdb4660393c
+@time playintelligentgame()
+
+# ╔═╡ 709fa20a-896d-11eb-3d35-0909bf0124c3
+@time playdumbgame()
+
+# ╔═╡ f859e3d4-8a23-11eb-2f36-65ccdeb9a782
+
 
 # ╔═╡ ff0b3db8-8a23-11eb-261e-5b3d3a549a19
 md"""
@@ -552,7 +578,10 @@ end
 # ╠═c6a5b54e-8969-11eb-056e-9d4dd769f7c4
 # ╟─a65acd26-896c-11eb-21f0-3b8479d17e1c
 # ╠═15b8bc4a-8b08-11eb-1991-95df70d5d7ee
-# ╠═a5c7dd32-8b14-11eb-197f-895819e95ff5
+# ╠═beaa55c2-896c-11eb-30b8-7bfafa9b7441
+# ╠═e6309ebc-896c-11eb-2a7e-2fdb4660393c
+# ╠═709fa20a-896d-11eb-3d35-0909bf0124c3
+# ╠═f859e3d4-8a23-11eb-2f36-65ccdeb9a782
 # ╟─ff0b3db8-8a23-11eb-261e-5b3d3a549a19
 # ╟─bb6e0a6a-896d-11eb-13da-adbd86f43b93
 # ╠═ee38ca70-896d-11eb-1256-97a4b1b3f321
