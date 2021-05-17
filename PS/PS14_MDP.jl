@@ -63,7 +63,6 @@ Below we have a set of problem that we want to transform into the MDP formalism.
 2. a human wants to maximize its earnings. The human can be tired, energetic or healthier. in function of how the human is feeling, he can sleep, work (=earn money) or do a workout. Working always fatigues the humen. Doing a workout makes him feel more energetic when tired and makes him healthier when energetic.
 3. consider the example of the lectures with the robot in the 4x3 grid. provide the MDP formalism.
 
-How would you keep track of the states and their transition probabilities in practice?
 """
 
 # ╔═╡ 46e7fb69-8bd0-4a78-a7df-83e71cde2abc
@@ -152,7 +151,7 @@ R(s,a,s') &:&\text{reward}\\
 \gamma&:&\text{discount factor}
 \end{eqnarray*}
 ```
-This algorithm will converge to the unique optimal values after a number of iterations after being initialized to zero.
+This algorithm will converge to the unique optimal values $V^{*}(s)$ after a number of iterations after being initialized to zero.
 """
 
 # ╔═╡ 612b57ce-549e-430c-b040-42aa13830283
@@ -225,11 +224,21 @@ let
 	p
 end
 
-# ╔═╡ 3f1d3609-d3c7-42cc-bd19-1a18a1df2d8c
+# ╔═╡ b008fbdc-10c3-4f67-b124-9870fc7eaa58
 md"""
-# TO DO:
-* complete docstrings of functions
-* add additional examples/tasks
+**Note:**
+
+In the previous example, the rewards of a state depends only on the state itself, i.e. $R(s)$. In practice however, you can encounter a reward that also depends on the action taken, i.e. $R(s,a)$, or even on the action taken and the outcome state, i.e. $R(s,a,s')$.
+"""
+
+# ╔═╡ 6dd8d501-ee40-4409-a5b8-5835297fdde0
+md"""
+### Application 1
+Consider the human life cycle from before. 
+
+* What is different with respect to the previous application?
+* Implement it and analyze the impact of the parameters in the model on the policy you would apply. Do your results make sense?
+
 """
 
 # ╔═╡ Cell order:
@@ -259,4 +268,5 @@ md"""
 # ╟─29226fd6-893e-4ca2-8bfb-6e834a9530bf
 # ╠═1521e183-e15e-4ac1-ac5b-6a058914bd05
 # ╠═40aa0d72-894f-473f-b644-15fcba096aba
-# ╟─3f1d3609-d3c7-42cc-bd19-1a18a1df2d8c
+# ╟─b008fbdc-10c3-4f67-b124-9870fc7eaa58
+# ╟─6dd8d501-ee40-4409-a5b8-5835297fdde0
