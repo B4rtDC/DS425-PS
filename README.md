@@ -12,7 +12,7 @@ The course has two big parts: Machine learning & search methods. This year we st
 - written project on machine learning. The projects will be available in March. Once started, the hour on Fridays will be reserved for you to work on this. The projects will be done in groups of two with mutual competition.
 - written test on search methods.
 
-We will be using Matlab for the machine learning part (you will use this in future robotics courses as well) and Julia ($\ge$ 1.7.1) second part of the course.
+We will be using Matlab (≥2020b) for the machine learning part (you will use this in future robotics courses as well) and Julia (≥1.7.1) second part of the course.
 
 ## Getting started
 Get the repository:
@@ -25,14 +25,15 @@ Get Julia 1.7.1 (also on your CDN laptop via the software center). We use a spec
 
 ### Matlab
 Get Matlab on your machine (also on your CDN laptop vie the software center). The following products are useful:
-    - Computer Vision Toolbox
-    - Deep Learning Toolbox (required)
-    - Optimization Toolbox
-    - Parallel Computing Toolbox
-    - Reinforcement Learning 
-    - Signal Processing Toolbox 
-    - Statistics and Machine Learning Toolbox (required)
-    - Text Analytics Toolbox (required)
+
+- Computer Vision Toolbox
+- Deep Learning Toolbox (required)
+- Optimization Toolbox
+- Parallel Computing Toolbox
+- Reinforcement Learning 
+- Signal Processing Toolbox 
+- Statistics and Machine Learning Toolbox (required)
+- Text Analytics Toolbox (required)
 
 ## Getting updates
 To sync with the latest version on GitHub, you can run `update.jl`. This should work on every computer. When connected to CDN by VPN, it should work. If you are working on the CDN machine, you need to pass your credentials over the proxy. This can be done by modifying and uncommenting line 10 in `update.jl`.
