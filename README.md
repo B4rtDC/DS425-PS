@@ -52,3 +52,12 @@ include("update.jl")
 ```
 
 Note: this still requires you to have a .git record in your directory, otherwise it will not work.
+
+## Reading list:
+* [Artificial Intelligence: A Modern Approach, 4th ed.](http://aima.cs.berkeley.edu)
+* [Probabilistic Machine Learning: An Introduction](https://probml.github.io/pml-book/book1.html)
+* [The Hundred-Page Machine Learning Book](http://themlbook.com)
+* [Introduction to Data Mining](https://www-users.cse.umn.edu/~kumar001/dmbook/index.php)
+* [Principles of Data Mining](https://dl.acm.org/doi/10.5555/2462612)
+* [Machine Learning: A Bayesian and Optimization Perspective 2nd ed.](https://www.elsevier.com/books/machine-learning/theodoridis/978-0-12-818803-3)
+
