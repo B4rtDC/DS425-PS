@@ -29,7 +29,7 @@ Below you can find a list of datasets along with a brief description and possibl
     - recommender system (cf. Netflix)
 * OBJECTS: a collection of images in 10 discrete categories, provided as a set of .mat files.
     - classification
-* SENSORS: a collection of sensor readings (time series) in cars, provided as .txt file
+* SENSORS: a collection of sensor readings (time series) in cars, provided as .ts file
     - classification
 * FOOD: a collection of recipes provides as a .json or .csv file.
     - classification
