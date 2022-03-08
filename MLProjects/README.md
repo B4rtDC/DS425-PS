@@ -36,3 +36,5 @@ Below you can find a list of datasets along with a brief description and possibl
     - recommender system (cf. UberEats)
 * GLAUCOMA: a collection of images of eyes with or without glaucoma, provided as .jpg files in separate folders.
     - classification
+
+Source datasets can be found [here](https://1drv.ms/u/s!AjEJNEKlZuy7Z_WqFex2qi3Flnk?e=Yle6M3).
