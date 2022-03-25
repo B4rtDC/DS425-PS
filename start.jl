@@ -1,6 +1,6 @@
 # change to course environment
 using Pkg
-Pkg.activate(dirname(@__FILE__))
+Pkg.activate(@__DIR__)
 
 # start Pluto server
 using Pluto
