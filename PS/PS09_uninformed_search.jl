@@ -105,8 +105,74 @@ begin
 	nothing
 end
 
+# ╔═╡ ba72d9d4-9914-4410-8670-fb9e531f6403
+begin
+
+	struct SequenceAction 
+		idx::Int
+		sequence::String
+	end
+	
+	struct SequenceNode <: Node
+		state::String
+		parent::Union{Nothing, SequenceNode} # other ideas: store sequence of actions
+		action::Union{Nothing, SequenceAction}
+		path_cost::Int
+		level::Int
+	end
+	
+	struct SequenceProblem <: Problem
+		rootnode::Node
+	end
+
+	function findactions_sequence(n::SequenceNode)
+		actions = Vector{SequenceAction}()
+		for i = 1:length(n.state)-1
+			if n.state[i:i+1] ∈ keys(comb)
+				push!(actions, SequenceAction(i, n.state[i:i+1]))
+			end
+		end
+		return actions
+	end
+
+	goaltest_sequence(n::SequenceNode) = n.state == "E"
+
+	function applyactions(n::SequenceNode, action::SequenceAction)
+		newstate =  n.state[1:action.idx-1] * comb[n.state[action.idx:action.idx+1]] * n.state[action.idx+2:end]
+		return SequenceNode(newstate, n, action, n.path_cost+1, n.level+1)
+	end
+
+	function solution_sequence(n::SequenceNode)
+		sol = Vector{SequenceAction}()
+		while !isnothing(n.parent)
+			push!(sol, n.action)
+			n = n.parent
+		end
+		return reverse!(sol)
+	end
+	
+end
+
+# ╔═╡ bab17fcb-deae-4cd1-a2cb-abb03e6c18cc
+begin
+	rootnode = SequenceNode("EACEAABAAB", nothing, nothing, 0, 0)
+	myproblem = SequenceProblem(rootnode)
+	#actions = findactions_sequence(rootnode)
+	#goaltest_sequence(rootnode)
+	#applyactions(rootnode, actions[3])
+end
+
+# ╔═╡ 89eff486-7d69-4f6c-96c2-73aec37ae26d
+treesearch(myproblem,goaltest=goaltest_sequence, 
+					 findactions=findactions_sequence, 
+					 applyactions=applyactions,
+					 solution=solution_sequence)
+
 # ╔═╡ Cell order:
 # ╟─f39ca040-710d-11eb-102e-c5521f152a14
 # ╟─cf5232c8-710c-11eb-00bb-7d9bcefd8660
 # ╟─f636e0b2-bcfe-457c-bf4e-a79eecae8f33
 # ╠═5e9aaef6-75e0-11eb-209d-fb7e9c6f00a5
+# ╠═ba72d9d4-9914-4410-8670-fb9e531f6403
+# ╠═bab17fcb-deae-4cd1-a2cb-abb03e6c18cc
+# ╠═89eff486-7d69-4f6c-96c2-73aec37ae26d
