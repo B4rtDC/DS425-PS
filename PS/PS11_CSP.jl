@@ -602,9 +602,9 @@ Implement the map coloring problem and benchmark the performance of different co
 
 
 # ╔═╡ Cell order:
-# ╟─9236c53d-accf-44e4-9a95-f71cfda90c03
+# ╠═9236c53d-accf-44e4-9a95-f71cfda90c03
 # ╟─902eeb2e-71d2-11eb-3322-53451cb23bf2
-# ╟─d0fa06da-71d1-11eb-2d00-97ea31bbb5ed
+# ╠═d0fa06da-71d1-11eb-2d00-97ea31bbb5ed
 # ╟─1a8ce0dd-bece-437e-b44f-a31f8c155ce1
 # ╟─4b510a0c-55bb-4e28-8dcd-993ee8ef433f
 # ╟─f95662cb-7034-4efd-916b-57c79cd8929c
