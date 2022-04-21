@@ -1077,7 +1077,50 @@ For each problem, you should think about how to define fitness and how to define
 """
 
 # ╔═╡ 499523bd-716f-4141-8b89-fb9d4cc05598
+begin
+	# demo for graphs
+	GG = Graphs.Graph(6)
+	add_edge!(GG, 1,2)
+	add_edge!(GG, 1,5)
+	add_edge!(GG, 2,3)
+	add_edge!(GG, 2,5)
+	add_edge!(GG, 3,5)
+	add_edge!(GG, 3,4)
+	add_edge!(GG, 4,5)
 
+	const graphcolors = [:red, :black, :blue, :white]
+
+	solinitgraphc = rand(graphcolors, 6)
+
+	function graphconflicts(state; graph::SimpleGraph)
+		nc = 0
+		for e in edges(graph)
+			if state[e.src] == state[e.dst]
+				nc += 1
+			end
+		end
+		return nc
+	end
+
+	function graphsuccessorstates(state; graph::SimpleGraph)
+		# total number of successor state: N_nodes* (N_colors - 1)
+		successors = Vector{Vector{Symbol}}()
+		for i in vertices(graph)
+			for color in graphcolors
+				if color ≠ state[i]
+					next = copy(state)
+					next[i] = color
+					push!(successors, next)
+				end
+			end
+		end
+		return successors
+	end
+
+	gcres = localbeamsearch([rand(graphcolors, 6) for _ in 1:4], 
+							fitness=x -> -graphconflicts(x; graph=GG), 
+							successor=x->graphsuccessorstates(x; graph=GG))
+end
 
 # ╔═╡ Cell order:
 # ╟─8a4c3b83-4b66-41d6-a075-be34c74b456f
