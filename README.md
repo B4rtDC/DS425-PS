@@ -6,7 +6,7 @@ Other related material for the course can be found on BelADL.
 
 
 ## Course overview
-The course has two big parts: Machine learning & search methods. This year we start with machine learning because the project is related to this topic as well. 
+The course has multiple parts: reinforcement learnign, Machine learning & search methods. This year we start with machine learning because the project is related to this topic as well. 
 
 ### Evaluation:
 - written project on machine learning. The projects will be available in March. Once started, the hour on Fridays will be reserved for you to work on this. The projects will be done in groups of two with mutual competition.
