@@ -423,7 +423,7 @@ end
 
 # ╔═╡ 03712063-cbdf-4680-ae77-994d37970674
 md"""
-Our transition model works as intended. Wa can now use value iteration to compute the utilities of the different states.
+Our transition model works as intended. We can now use value iteration to compute the utilities of the different states.
 """
 
 # ╔═╡ 612b57ce-549e-430c-b040-42aa13830283
