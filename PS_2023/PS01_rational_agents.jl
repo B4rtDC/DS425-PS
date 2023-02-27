@@ -13,9 +13,21 @@ begin
 
 	Logging.global_logger(ConsoleLogger(stderr, Logging.LogLevel(-5000)))
 	Logging.disable_logging(Logging.LogLevel(-1001))
-
-	nothing
+	TableOfContents()
+	
 end
+
+# ╔═╡ 1f6cac8e-1932-4dc7-9e64-ab531a5356e2
+html"""
+<style>
+	main {
+		margin: 0 auto;
+		max-width: 2000px;
+    	padding-left: max(160px, 10%);
+    	padding-right: max(160px, 10%);
+	}
+</style>
+"""
 
 # ╔═╡ d7fc7f24-9772-4903-a9cc-5f698f61e83f
 md"""
@@ -144,6 +156,9 @@ Consider a modified version of the vacuum environment, in which the agent is pen
 3. How do your answers to (1) and (2) change if the agent’s percepts give it the clean/dirty status of every square in the environment?
 """
 
+# ╔═╡ ea299c52-655a-4685-906a-b48fed8631af
+
+
 # ╔═╡ f2915910-70ff-11eb-2f60-e9963db3aaeb
 md"""
 ## Another modified agent
@@ -155,6 +170,16 @@ Consider a modified version of the simple vacuum environment in which the geogra
 4. Can a reflex agent with state outperform a simple reflex agent? Design such an agent and measure its performance on several environments. Can you design a rational agent of this type?
 """
 
+# ╔═╡ 26e66049-4b41-49e9-b19b-31d58629aa20
+begin
+	# world building
+	loactions = Dict(k=>v for (k,v) in zip(Iterators.product(1:3,1:3), rand(Bool, 9)))
+	w = world(loactions)
+	# reflec vacuum rules
+	#reflexrules = Dict((1,1) => (1,2), (1,2)=>(1,3), (1,3)=> (1,3),...)
+	world(collect(Iterators.product(1:3,1:3)), rand(Bool, 9))
+end
+
 # ╔═╡ a8804918-3b00-4e3e-a439-956a504bd846
 md"""
 # Non-deterministic vacuum agent
@@ -163,6 +188,7 @@ md"""
 """
 
 # ╔═╡ Cell order:
+# ╟─1f6cac8e-1932-4dc7-9e64-ab531a5356e2
 # ╟─88af7dc6-70fd-11eb-3af2-f7a194340290
 # ╟─d7fc7f24-9772-4903-a9cc-5f698f61e83f
 # ╟─16033df3-7341-4eb8-bd7e-5b0170993f3c
@@ -170,5 +196,7 @@ md"""
 # ╠═9fd46218-70fe-11eb-1ddd-132f13e0611c
 # ╠═27319f0c-d822-4012-a070-c6700c80504d
 # ╟─ab564aec-70ff-11eb-0d36-cd95fb8def23
+# ╠═ea299c52-655a-4685-906a-b48fed8631af
 # ╟─f2915910-70ff-11eb-2f60-e9963db3aaeb
+# ╠═26e66049-4b41-49e9-b19b-31d58629aa20
 # ╟─a8804918-3b00-4e3e-a439-956a504bd846
