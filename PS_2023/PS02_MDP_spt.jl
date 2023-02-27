@@ -19,7 +19,7 @@ struct MarkovDecisionProcess{T} <: AbstractMarkovDecisionProcess
     reward::Dict
 
     function MarkovDecisionProcess{T}(initial::T, actions_list::Set{T}, terminal_states::Set{T}, transitions::Dict, states::Union{Nothing, Set{T}}, gamma::Float64) where T
-        !(0 < gamma <= 1) ? nothing : error("MarkovDecisionProcess():\nThe gamma variable of an MDP must be between 0 and 1, the constructor was given ", gamma, "!")
+        (0 < gamma <= 1) ? nothing : error("MarkovDecisionProcess():\nThe gamma variable of an MDP must be between 0 and 1, the constructor was given ", gamma, "!")
         new_states = typeof(states) <: Set ? states : Set{typeof(initial)}()
 
         return new(initial, new_states, actions_list, terminal_states, transitions, gamma, Dict())
