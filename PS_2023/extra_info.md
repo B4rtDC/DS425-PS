@@ -22,3 +22,4 @@ In this document you can find some external references to broaden your horizon. 
 ### ML in general:
 * Google's [Lion optimizer](https://github.com/google/automl/tree/master/lion) as an alternative to ADAM
 * Ari Seff's [YouTube channel](https://www.youtube.com/ariseffai) on AI (curruntly working at Google, formerly at Princeton)
+* [DataFlowr](https://dataflowr.github.io/website/)'s modules to discover deep learning
