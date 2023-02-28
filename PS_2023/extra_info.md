@@ -16,6 +16,7 @@ In this document you can find some external references to broaden your horizon. 
 ### NLP advances:
 * The original transformer paper "[Attention is all you need](https://arxiv.org/abs/1706.03762)"
 * ChatGPT and beyond [webinar](https://www.youtube.com/watch?v=-lnHHWRCDGk&list=WL&index=19&t=3s) from Stanford
+* [Presentation](https://docs.google.com/presentation/d/1TTyePrw-p_xxUbi3rbmBI3QQpSsTI1btaQuAUvvNc8w/) on NLP and ChatGPT by the Princeton NLP group
 * Build ChatGPT yourself,[a tutorial](https://www.youtube.com/watch?v=kCc8FmEb1nY) by the legendary Andrej Karpathy (founding member of OpenAI, Sr. Director of AI at Tesla)
 
 
