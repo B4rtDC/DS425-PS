@@ -27,8 +27,8 @@ module Human_MDP
         ("Energized", "work", "Tired") => 1.0,
         ("Energized", "workout", "Healthy") => 4.0,
         ("Tired", "work", "Tired") => -3.0,
-        ("Tired", "workout", "Tired") => -2.0,
-        ("Tired", "workout", "Energized") => 3.0,
+        ("Tired", "workout", "Tired") => 200.0,
+        ("Tired", "workout", "Energized") => 300.0,
         ("Tired", "sleep", "Energized") => 6.0,
         ("Tired", "sleep", "Tired") => -1.0,
         ("Healthy", "work", "Tired") => 0.5)
@@ -82,7 +82,89 @@ countmap([Human_MDP.apply_action(mystate, my_action) for _ in 1:100]) # => 80% E
 
 # What's next?
 # - Simple Value Iteration
-# - Extraction of the policy
-# - Make an illustration
+function value_iteration(;γ=0.9, Nmax=100)
+    # initialize the values (utilities)
+    V = Dict(s => 0.0 for s in Human_MDP.Human_MDP_States)
+    # do the required number of iterations
+    for _ in 1:Nmax
+        # for each state compute the update
+        for s in Human_MDP.Human_MDP_States
+            # get the possible actions for state s
+            actions = Human_MDP.possible_actions(s)
+            # loop over the actions to find the one maximizing the utility value
+            max_value = -Inf
+            for a in actions
+                # compute the update
+                res = sum(T * (Human_MDP.Human_MDP_Reward_model[(s,a,s_prime)] + γ * V[s_prime]) for (T, s_prime) in Human_MDP.Human_MDP_Transition_model[(s,a)])
+                # check if it is the largest value up to now
+                if res > max_value
+                    max_value = res
+                end
+            end
+            # update the value
+            V[s] = max_value
+        end
+    end
+    return V
+end
 
+# Utility valyes
+V_star = value_iteration(Nmax=1000)
+# Extraction of the policy?
+function policy_extraction(V; γ=0.9)
+    Π = Dict(s => "?" for s in Human_MDP.Human_MDP_States)   
+    for s in Human_MDP.Human_MDP_States
+        # get the possible actions for state s
+        actions = Human_MDP.possible_actions(s)
+        # loop over the actions to find the one maximizing the utility value
+        max_value, winner = -Inf, ""
+        for a in actions
+            # compute the update
+            res = sum(T * (Human_MDP.Human_MDP_Reward_model[(s,a,s_prime)] + γ * V[s_prime]) for (T, s_prime) in Human_MDP.Human_MDP_Transition_model[(s,a)])
+            # check if it is the largest value up to now
+            if res > max_value
+                max_value = res
+                winner = a
+            end
+        end
+        # update the value
+        Π[s] = winner
+    end
+    return Π
+end
+policy_extraction(V_star)
+
+
+
+
+
+
+
+
+
+begin
+# How fast am I converging?
+using Plots
+# number of iterations
+N = collect(range(0, 200, step=5))
+H = Float64[]
+T = Float64[]
+E = Float64[]
+for n in N
+    # compute utilities given the number of iterations
+    v = value_iteration(Nmax=n)
+    # push the restults in the arrays
+    push!(H, v["Healthy"])
+    push!(T, v["Tired"])
+    push!(E, v["Energized"])
+end
+# plot the results
+begin
+    convergence_plot = plot(N, H, label="Healthy", xlabel="Iteration", ylabel="utility")
+    plot!(convergence_plot, N, T, label="Tired")
+    plot!(convergence_plot,N, E, label="Energized")
+end
+end
+
+# - Make an illustration
 
