@@ -17,10 +17,17 @@ In this document you can find some external references to broaden your horizon. 
 * The original transformer paper "[Attention is all you need](https://arxiv.org/abs/1706.03762)"
 * ChatGPT and beyond [webinar](https://www.youtube.com/watch?v=-lnHHWRCDGk&list=WL&index=19&t=3s) from Stanford
 * [Presentation](https://docs.google.com/presentation/d/1TTyePrw-p_xxUbi3rbmBI3QQpSsTI1btaQuAUvvNc8w/) on NLP and ChatGPT by the Princeton NLP group
-* Build ChatGPT yourself,[a tutorial](https://www.youtube.com/watch?v=kCc8FmEb1nY) by the legendary Andrej Karpathy (founding member of OpenAI, Sr. Director of AI at Tesla)
+* Build ChatGPT yourself, [a tutorial](https://www.youtube.com/watch?v=kCc8FmEb1nY) by the legendary Andrej Karpathy (founding member of OpenAI, Sr. Director of AI at Tesla)
 
 
 ### ML in general:
-* Google's [Lion optimizer](https://github.com/google/automl/tree/master/lion) as an alternative to ADAM
 * Ari Seff's [YouTube channel](https://www.youtube.com/ariseffai) on AI (curruntly working at Google, formerly at Princeton)
 * [DataFlowr](https://dataflowr.github.io/website/)'s modules to discover deep learning
+* [Stephen Wolfram](https://www.youtube.com/watch?app=desktop&v=flXrLGPY3SU) on ChatGPT. Also covers more general ML topics
+* [Stanford MLSys Seminars](https://mlsys.stanford.edu/): invited talks by world class researchers in the field of ML
+* [How to avoid machine learning pitfalls: a guide for academic researchers](https://arxiv.org/abs/2108.02497), by professor Michael Lones 
+
+### interesting projects:
+* [Reconstructing images from human brain activity](https://sites.google.com/view/stablediffusion-with-brain/)
+* [DeepAgency](https://www.deepagency.com): a modeling agency which uses AI to generate personalized models
+* Google's [Lion optimizer](https://github.com/google/automl/tree/master/lion) as an alternative to ADAM
