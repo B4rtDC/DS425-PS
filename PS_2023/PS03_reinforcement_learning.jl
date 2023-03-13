@@ -443,8 +443,26 @@ Make a figure that shows the evolution of the estimate in function of the number
 """
 
 # ╔═╡ 6af33788-ba86-48c1-88a8-57604312130e
-begin # to do
+let
+	# run a larger number of trials
+	intensive_learner = RLgrid.DirectUtilityEstimation(mypolicy)
+	estimates = Dict(s => [0.] for s in myMDP.states)
 	
+	for _ = 1:1000
+		RLgrid.single_trial!(intensive_learner, myMDP)
+		for s in myMDP.states
+			push!(estimates[s], get(intensive_learner.U, s, 0.) )
+		end
+	end
+	estimates
+
+	p = plot(xlabel="iteration", ylabel="utility")
+	for s in myMDP.states
+		plot!(p, 1:length(estimates[s]), estimates[s], label="$(s)")
+	end 
+	p
+	# show the learned utilities
+#	println("Final utilities:\n", join(["$(state): $(val)" for (state,val) in intensive_learner.U],"\n"))
 end
 
 # ╔═╡ 1807328b-653d-404f-9e39-49ca5b01f55f
@@ -606,7 +624,7 @@ RLcar = ingredients("./PS03_RL_car_spt.jl");nothing
 begin
 	# small demo usage
 	# obtain the MDP linked to the car
-	model = RLcar.CarMDP(κ=0.1)
+	model = RLcar.CarMDP(κ=0.5)
 	# get a starting state
 	state = RLcar.initial_state(model)
 	# get the available action in the starting state

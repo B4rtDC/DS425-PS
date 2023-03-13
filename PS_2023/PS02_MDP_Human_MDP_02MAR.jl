@@ -166,5 +166,19 @@ begin
 end
 end
 
-# - Make an illustration
 
+
+# check policy error
+# 1. compute the "true" utilities optimal policy
+V_star = value_iteration(Nmax=1000)
+Π_star = policy_extraction(V_star)
+# 2. for each nnumber of iterations compute the utilities and the policy
+res = Bool[]
+for n in 0:50 # number of iterations
+    V̂ = value_iteration(Nmax=n) # estimated utilities
+    π̂ = policy_extraction(V̂) # estimated policy
+    # check if they are the same
+    push!(res, all(Π_star[s] == π̂[s] for s in Human_MDP.Human_MDP_States))
+end
+
+plot(res)
