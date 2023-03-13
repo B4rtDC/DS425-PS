@@ -31,3 +31,4 @@ In this document you can find some external references to broaden your horizon. 
 * [Reconstructing images from human brain activity](https://sites.google.com/view/stablediffusion-with-brain/)
 * [DeepAgency](https://www.deepagency.com): a modeling agency which uses AI to generate personalized models
 * Google's [Lion optimizer](https://github.com/google/automl/tree/master/lion) as an alternative to ADAM
+* The Romanian government's is using an [AI-powered adviser](https://www.euronews.com/next/2023/03/06/romanias-prime-minister-has-hired-the-worlds-first-ai-government-adviser-what-will-it-do) that was developed by researchers to quickly analyze the opinions of Romanian citizens on key issues and policies 
