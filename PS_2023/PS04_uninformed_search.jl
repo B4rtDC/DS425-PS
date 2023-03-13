@@ -8,7 +8,7 @@ using InteractiveUtils
 begin 
 	using Pkg
 	Pkg.activate(joinpath(@__DIR__,".."))
-	
+	using PlutoUI
 	using DataStructures
 	using Logging
 	using Graphs
@@ -17,7 +17,7 @@ begin
 	Logging.disable_logging(LogLevel(-1000))
 	
 	const MAXLOG=100
-	nothing
+	TableOfContents(title="Search")
 end
 
 # ╔═╡ f5517d51-2a4f-4159-9820-1d18a097c9e4
