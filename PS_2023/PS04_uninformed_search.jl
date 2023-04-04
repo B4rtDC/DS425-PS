@@ -193,7 +193,7 @@ Solve a maze by using different search methods. As an additional challenge, you 
 
 Below you have a maze generator (from [Rosetta Code](https://rosettacode.org/wiki/Maze_generation#Julia)). You can use it to generate a maze of a given size. 
 The maze is represented as a matrix of `0` and `1`, where `0` represents a wall and `1` a free space. 
-The starting point is always at the top left corner and the goal at the bottom right corner. In terms of nonde ids,
+The starting point is always at the top left corner and the goal at the bottom right corner. In terms of node ids,
 you start in node `n_cols + 2` and want to get to node `n_cols * (n_rows - 1)  - 2`.
 """
 
@@ -279,7 +279,7 @@ end
 # ╔═╡ f20f6498-41c1-47a9-8afd-71059c9656c8
 begin 
 	# make a maze
-	M =  maze(15,15)
+	M =  maze(5,2)
 	# show it
 	printmaze(M)
 	# get the graph
@@ -287,15 +287,59 @@ begin
 	# Find your way out!
 end
 
+# ╔═╡ 2e3ec15e-c6e8-4dc2-9ff2-626f48609a72
+M
+
+# ╔═╡ bf336276-cf7d-4aa7-9c47-c605886c517d
+begin
+startnode = size(M,2) + 2
+targetnode = size(M,2) * (size(M,1) - 1) - 1
+	(startnode, targetnode)
+end
+
+# ╔═╡ 3490f7c1-dcd6-44c4-ae4b-10a97eb2753e
+Graphs.neighbors(G,19)
+
+# ╔═╡ 43339c44-2218-4a89-b187-437f82a7cf2e
+begin
+	struct MazeProblem
+		initial_state::Int
+		terminal_state::Int
+		M::Matrix
+		G
+	end
+
+	function MazeProblem(nrows, ncols)
+			M =  maze(nrows, ncols)
+			G = getgraph(M)
+			startnode = size(M,2) + 2
+			targetnode = size(M,2) * (size(M,1) - 1) - 1
+			return MazeProblem(startnode, targetnode, M, G)
+	end
+	MazeProblem(3,2, [2 2; 1 3], SimpleGraph()), MazeProblem(3,2)
+
+	goaltest(s::Int, p::MazeProblem) = s == p.terminal_state
+	find_actions(s::Int, p::MazeProblem) = Graphs.neighbors(p.G, s)
+	apply_action(s::Int, a::Int, p::MazeProblem) = a
+	# we need somethin like this:
+	P = MazeProblem(1,2)
+	printmaze(P.M)
+	[find_actions(i, P) for i in vertices(P.G)]
+end
+
 # ╔═╡ Cell order:
 # ╟─f5517d51-2a4f-4159-9820-1d18a097c9e4
-# ╠═f39ca040-710d-11eb-102e-c5521f152a14
+# ╟─f39ca040-710d-11eb-102e-c5521f152a14
 # ╟─cf5232c8-710c-11eb-00bb-7d9bcefd8660
 # ╟─f636e0b2-bcfe-457c-bf4e-a79eecae8f33
 # ╠═5e9aaef6-75e0-11eb-209d-fb7e9c6f00a5
 # ╠═ba72d9d4-9914-4410-8670-fb9e531f6403
 # ╠═bab17fcb-deae-4cd1-a2cb-abb03e6c18cc
 # ╠═89eff486-7d69-4f6c-96c2-73aec37ae26d
-# ╠═5116ffec-21eb-4f1a-a2fc-001a7da3c052
-# ╠═722235d3-3af6-42b9-9f48-1aad5343f310
+# ╟─5116ffec-21eb-4f1a-a2fc-001a7da3c052
+# ╟─722235d3-3af6-42b9-9f48-1aad5343f310
 # ╠═f20f6498-41c1-47a9-8afd-71059c9656c8
+# ╠═2e3ec15e-c6e8-4dc2-9ff2-626f48609a72
+# ╠═bf336276-cf7d-4aa7-9c47-c605886c517d
+# ╠═3490f7c1-dcd6-44c4-ae4b-10a97eb2753e
+# ╠═43339c44-2218-4a89-b187-437f82a7cf2e
