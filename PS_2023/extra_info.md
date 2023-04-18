@@ -26,6 +26,7 @@ In this document you can find some external references to broaden your horizon. 
 * [Stephen Wolfram](https://www.youtube.com/watch?app=desktop&v=flXrLGPY3SU) on ChatGPT. Also covers more general ML topics
 * [Stanford MLSys Seminars](https://mlsys.stanford.edu/): invited talks by world class researchers in the field of ML
 * [How to avoid machine learning pitfalls: a guide for academic researchers](https://arxiv.org/abs/2108.02497), by professor Michael Lones 
+* [The age of AI has begun](https://www.gatesnotes.com/The-Age-of-AI-Has-Begun), by Bill Gates
 
 ### interesting projects:
 * [Reconstructing images from human brain activity](https://sites.google.com/view/stablediffusion-with-brain/)
