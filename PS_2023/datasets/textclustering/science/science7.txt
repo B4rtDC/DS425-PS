@@ -1,0 +1,27 @@
+Weapon of bone destruction identified
+Enzyme finding may aid hunt for new anticancer therapies
+
+A blood cancer uses a secret weapon for tearing bone apart. That same mechanism may allow breast cancer and other types of tumors to spread to bones, a new study suggests.
+
+In patients with the blood cancer multiple myeloma, an enzyme called thymidine phosphorylase sets off a chain reaction that leads to bone destruction, researchers report August 24 in Science Translational Medicine. Drugs that inhibit the enzyme caused mice to lose less bone.
+
+The findings may lead to new therapies for stopping bone loss from multiple myeloma or other cancers that spread to bone. Halting bone destruction may even make bones less hospitable for tumors, stopping their growth, too, says Jing Yang, a cancer researcher at the University of Texas MD Anderson Cancer Center in Houston.
+
+Multiple myeloma is a cancer that grows in bone marrow. Myeloma cells talk directly to bone-remodeling cells. The tumor cells’ messages send bone-building cells on permanent vacation while stimulating bone-demolishing cells. The result is weak bones, holes, fractures and bone pain.
+
+Yang and colleagues had previously discovered that a biological process in myeloma cells that weakens bones also boosts production of thymidine phosphorylase. The enzyme was known to be more abundant in many types of cancers where it stimulates blood vessel growth to tumors and stops tumor cells from dying. No one knew it was involved in poking holes in bones.
+
+Thymidine phosphorylase in myeloma cells kicks off a series of steps that convert a building block of DNA called thymidine into a small molecule called 2-deoxy-D-ribose, or 2DDR. Myeloma cells secrete 2DDR and bone cells pick it up, sending a signal to turn off genes that control bone cell activity. When bone-building cells called osteoblasts get the message, they stop working, Yang and colleagues discovered. But bone-eating cells called osteoclasts work harder. That tips the cycle of bone remodeling toward destruction.
+
+Yang’s team injected myeloma cells into the femurs of mice. After the cancer was established, the researchers treated some of the mice with drugs that inhibit thymidine phosphorylase. Those mice lost less bone than untreated mice with myeloma did.
+
+The drugs have already been approved for treating other types of cancer. If the results of the mouse study hold up in human clinical tests, the drugs may also preserve bone in myeloma patients and people with other cancers that have spread to their bones, Yang says. She hopes that the drugs may even help repair bone damage.
+
+“We’re getting better at getting rid of myeloma cells,” says Rebecca Silbermann, a hematologist at Indiana University School of Medicine in Indianapolis. “But we have no way to heal those bone lesions at this point, even if a person’s myeloma is gone.”
+
+Currently, drugs used to maintain bone strength slow bone-dissolving cells, but don’t put bone-building cells back to work, Silbermann says. Drugs like the thymidine phosphorylation inhibitors used in the study might have better results because they may prod bone-building cells to do their jobs again.
+
+Because thymidine phosphorylase’s message passes through multiple receivers and transmitters, researchers also have multiple options for interrupting the relay, says Yibin Kang. That interference may one day allow doctors to stop or even reverse bone loss from cancer and maybe even from osteoporosis, says Kang, a cancer researcher at Princeton University who studies how breast cancer spreads to bone.
+
+While the study provides important new clues about how myeloma breaks down bone, it’s not clear whether thymidine phosphorylase starts the process early in cancer or just helps perpetuate it later, says Qing Yi, a myeloma researcher at the Cleveland Clinic. It’s also too early to tell whether breast cancer and others use the same process for breaking down bone, he says. “This has a long way to go before it can ever reach the patient.”
+

@@ -1,0 +1,24 @@
+When it comes to antimicrobial resistance, watch out for wildlife
+Bacterial genes that best drugs, disinfectants turning up in guts of all sorts of animals
+
+It’s time to go wild studying antimicrobial resistance, a research team says.
+
+Most analyses of how microbes come to laugh off the drugs and disinfectants that should kill them have focused on people in hospitals or livestock on farms, says behavioral ecologist Kathryn Arnold of the University of York in England. Yet a growing number of studies — in crows, elephant seals, voles and other wild animals — are raising big questions about where wildlife fits into the increasing threat of antimicrobial resistance. Genes for resistance are showing up in microbes flourishing in the guts and other parts of wild animals. How those genes get there and where they might go now needs serious attention, Arnold and colleagues argue August 17 in a Biology Letters review of wildlife-related papers.
+
+So far, scientists have not described a clear-cut case of genes for antimicrobial resistance traveling from wildlife microbial flora back to humans, but that scenario is “very biologically logical,” says Barry McMahon of University College Dublin. McMahon, who has examined gulls for antimicrobial resistance genes, heartily endorses the new paper’s case that overlooking wildlife and environmental factors leaves a big gap in understanding resistance.
+
+So does Kathleen Alexander of Virginia Tech in Blacksburg. Monitoring what’s circulating in wild animals might serve as early warnings for what’s ahead. Focusing solely on hospitals, she says, is “monitoring the barn after the horse has left.”
+
+Genes for resistance can readily spread as bacteria multiply and carry their toolkits with them. And bacteria are “promiscuous,” Arnold explains. They commingle genes with their own kind or with fairly strange strangers, widely distributing resistance genes. In this loose networking, a benign bacterium can pass along resistance genes to a pathogen, especially as resistance turns up in microbes in a wide diversity of animals.
+
+One overview Arnold and her colleagues looked at tallied 210 papers (up through May 2015) that have reported some form of antimicrobial resistance in free-ranging animals
+
+Known carriers include vertebrates (mostly North American birds and mammals) and a few invertebrates. For example, 15 of 590 fecal samples from American crows in three states carried Enterococcus bacteria with genes for resisting vancomycin, a drug of last resort for treating serious infections, a paper reported in 2014.
+
+More puzzling reports come from places with minimal local people or livestock to pass along resistance picked up during medical treatment. Among 97 birds checked in the Arctic (Siberia, Alaska and Greenland), researchers in 2008 reported Escherichia coli bacteria resistant to 14 of the 17 antibiotics they tested. Admittedly birds fly, but monkeys (outside of Oz) don’t. In the Uxpanapa forests of Mexico, however, howler monkeys had E. coli resistance to ciprofloxacin, a synthetic antibiotic. That suggests some connection, however roundabout, between human medicine and faraway monkeys.
+
+Maybe the answer is birds flying in and roosting in trees. But for any resistance transfer involving wildlife, “the forensic trail isn’t well understood,” Arnold says. She hopes for tight chains of evidence showing how resistance moves among species and over distances. To date, researchers have only circumstantial evidence, much of it involving runoff from human wastes. A 2008 study of stranded northern elephant seals along the California coast, for instance, found that the nearer the animals were to outflow of freshwater from land, the more likely they were to test positive for antimicrobial-resistant E. coli.
+
+Simple proximity to waste isn’t the whole story though, Arnold points out. Small differences in lifestyle matter, even among similar animals. Bank voles and wood mice living in the same British woodland both carried E. coli resistant to multiple antibiotics. But despite living in small rodents in the same habitat, rodent E.coli populations ran a bit out of sync in amount and seasonal surge (mice had more and peaked earlier). Arnold’s current coauthors —Nicola Williams of the University of Liverpool and Malcolm Bennett of the University of Nottingham —were among the researchers reporting these results in 2011.
+
+Comparing levels of resistance that species acquire offers clues to what’s important in spreading the worrisome genes, Alexander says. In northern Botswana where she works, warthogs have extra antimicrobial resistance, she suspects, because they eat human waste and cattle don’t. Wildlife is already doing natural experiments, if researchers pay attention
