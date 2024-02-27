@@ -1,0 +1,38 @@
+Neighbouring star Proxima Centauri has Earth-sized planet
+
+The nearest habitable world beyond our Solar System might be right on our doorstep - astronomically speaking.
+Scientists say their investigations of the closest star, Proxima Centauri, show it to have an Earth-sized planet orbiting about it.
+What is more, this rocky globe is moving in a zone that would make liquid water on its surface a possibility.
+Proxima is 40 trillion km away and would take a spacecraft using current technology thousands of years to reach.
+
+Nonetheless, the discovery of a planet potentially favourable to life in our cosmic neighbourhood is likely to fire the imagination.
+"For sure, to go there right now is science fiction, but people are thinking about it and it's no longer just an academic exercise to imagine we could send a probe there one day," said Guillem Anglada-Escudé whose "Pale Red Dot" team reports the existence of the new world in the journal Nature.
+
+Earlier this year, the billionaire venture capitalist Yuri Milner said he was investing $100m in studies to develop tiny spacecraft that could be propelled across the galaxy by lasers.
+These would travel at perhaps 20% of the speed of light, shortening the journey to a star like Proxima Centauri to mere decades.
+Just how "habitable" this particular planet really is, one has to say is pure speculation for the time being.
+The Queen Mary University of London researcher and his group concede they still have much work to do to extend their observations.
+Simply identifying the world, catalogued as "Proxima b", was a considerable challenge.
+It was made possible through the use of an ultra-precise instrument called HARPS.
+This spectrograph, attached to a 3.6m telescope in Chile, detects the very slight wobble induced in a star when circled by a gravitationally bound planet.
+Its data suggests Proxima b has a minimum mass 1.3 times that of Earth and orbits at a distance of about 7.5 million km from the star, taking 11.2 days to complete one revolution.
+
+The distance between the star and its planet is considerably smaller than Earth's separation from the Sun (149 million km). But Proxima Centauri is what is termed a red dwarf star. It is much reduced in size and dimmer compared with our Sun, and so a planet can be nearer and still enjoy conditions that are potentially as benign as those on Earth.
+"This planet is at 5% of the Earth's distance from the Sun. However, Proxima is 1,000 times fainter than the Sun. So the flux - the energy - reaching Proxima b is about 70% of what the Earth receives. It's like taking Earth a bit further away, but it's comparable," explained Dr Anglada-Escudé.
+Whether the temperatures on Proxima b are favourable for life to exist is going to depend on the presence of an atmosphere.
+An envelope of greenhouse gases would warm surface conditions and provide sufficient pressure to keep water - essential for biology - in a liquid state.
+But even with the limited information we currently have, scientists are excited by the news.
+"I think it's the most important exoplanet discovery there will ever be - how can you ever trump something that could be habitable orbiting around the very closest star to the Sun?" commented Dr Carole Haswell from the Open University.
+"When I was a kid, it wasn't clear there were any other planets that we could walk around on and find liquid water on - so I think it's absolutely thrilling," she told BBC News.
+
+Researchers are presently looking to see if the planet crosses the face of Proxima Centauri as viewed from Earth - an event referred to as a "transit".
+This kind of backlit observation could confirm not just the existence of an atmosphere but reveal perhaps something of its chemical properties.
+Indeed, researchers have long talked about using transits to try to detect the signatures of life on planets that are too far away to be visited by spacecraft.
+If there are lifeforms on Proxima b - even simple microbes - they may find the going rather tough, however.
+Red dwarfs are very active. They tend to throw out big flares that would bombard a nearby planet with energetic particles. The X-ray emission is much more intense as well.
+Even so, these kinds of stars are now the subject of great interest in the search for Earth-like planets simply because they are so abundant in the galaxy.
+One priority for the future will be to get a direct image of the planet.
+This should be possible with the European Extremely Large Telescope now under construction in Chile.
+It is being given a 39m-wide primary mirror and state-of-the-art instrumentation precisely to do this kind of observation.
+"A planet around even a wimpy star like Proxima Centauri is going to be more than a billion times fainter than the star itself. So, what you do is block out the light from the star using a special device and that allows you then to go deeper into the star's surroundings," explained Cambridge University's Prof Gerry Gilmore.
+"This is one of the E-ELT's design goals. There's also a Nasa mission under development called W-First. It will have a high-resolution coronagraphic mode which again is designed for the same purpose."

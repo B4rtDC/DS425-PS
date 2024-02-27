@@ -1,0 +1,18 @@
+Lack of nutrients stalled rebound of marine life post-Permian extinction
+Hot seas altered nitrogen cycle, delaying recovery by millions of years
+
+Out-of-reach nutrients could help explain why life on Earth took so long to bounce back from the worst extinction of all time.
+
+Analyzing the chemical changes that followed the Permian extinction 252 million years ago, geologists propose that hot sea surface temperatures led to conditions that trapped nitrogen far below the ocean’s sunlit, life-filled layers. The resulting deficiency of the key nutrient helps explain why marine ecosystems took 5 million to 9 million years to recover, millions of years longer than for other mass extinctions, the researchers propose online August 5 in Geology.
+
+“It’s equivalent to a farm,” says study coauthor Stephen Grasby, a geochemist at the Geological Survey of Canada in Calgary. “If you’re not throwing fertilizer on the field, the soil becomes nutrient limited and you get less and less plant growth.”
+
+Before the extinction, which wiped out more than 90 percent of all marine species, the waters off the northwestern coast of the Pangaea supercontinent thrived with biological activity powered in part by the nitrogen cycle. Nitrogen is a crucial nutrient for the marine food web. When near-surface life dies, the remains sink. At colder, darker depths, the remains decompose and release nitrogen. Nearby microbes then convert that nitrogen into a form usable by life, and churning by winds blowing over the ocean draws that nitrogen toward the surface, where the cycle begins anew.
+
+Grasby and colleagues tracked the history of the nitrogen cycle by analyzing the chemical makeup of 446 samples of ocean sediment excavated from what is now the Canadian Arctic. Unlike nitrogen in the atmosphere, nitrogen cycling through the ocean contains a lot of nitrogen-15. Following the Permian extinction, the portion of nitrogen-15 in the sediments dropped from over 9 percent of the nitrogen to almost nothing.
+
+That decline was probably the result of a series of voluminous volcanic eruptions in what is now Siberia. Scientists think the volcanic outpouring triggered the extreme environmental changes that made the planet inhospitable to most life (SN: 9/19/15, p. 10). Accumulating greenhouse gases from the eruptions heated the ocean surface, causing the nitrogen cycle slowdown, Grasby says. The heating lowered the depth where decomposition takes place to a point below which winds can churn up water — below the top few hundred meters of water. As a result, nitrogen became trapped in the deep ocean, just out of reach of near-surface life. With little nitrogen coming from below, nitrogen-hungry microbes at the surface probably pulled more of the nutrient from the atmosphere. That process is inefficient, though, so nitrogen remained scarce and stunted the entire ecosystem, the researchers propose.
+
+Eventually, the ocean cooled, the decomposition point shifted upward and the nitrogen cycle restarted, causing a boom in biological activity.
+
+Reduced nitrogen supply is a plausible explanation for the delayed recovery, but other changes, such as chronically low oxygen availability, brought on by shifting environmental conditions probably contributed as well, says David Kidder, a geologist at Ohio University in Athens. “All of these things that are changing are doing it in pretty much lockstep,” he says. “You can’t put a finger on one thing and say that the recovery was long because of nutrients or low oxygen in the water. It’s a change in the whole system.”

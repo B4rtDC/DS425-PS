@@ -6,10 +6,10 @@ Other related material for the course can be found on BelADL.
 
 
 ## Course overview
-The course has multiple parts: reinforcement learning, machine learning & search methods. This year we start with reinforcement learning because the project is related to this topic as well. 
+The course has multiple parts: reinforcement learning, machine learning & search methods. This year we start with machine learning because the project is related to this topic as well. 
 
 ### Evaluation:
-- written project on reinforcement learning. The concept of the projects is detailed in the 'Project_2023' folder.
+- written project on machine learning learning, with a focus on leveraging large language models (LLMs). The concept of the projects is detailed in the 'Project_2024' folder.
 - written test.
 
 We will mainly be using Matlab (≥2022a) for the machine learning part (you will use this in future robotics courses as well) and Julia (≥1.8.1).
@@ -19,7 +19,7 @@ Get the repository:
 - on Linux/Mac (in terminal): `git clone https://github.com/B4rtDC/DS425-PS.git`
 - on Windows: run `downloadwithgit.jl`, where you modify `downloadfolder` with the proper path (*note*: this also works for Linux/Mac)
 ### Julia
-Get Julia 1.8.1 (also on your CDN laptop via the software center). We use a specific virtual environment for this course (located in this folder). If you follow the steps below, this environment will be activated automatically.
+Get Julia (also on your CDN laptop via the software center). We use a specific virtual environment for this course (located in this folder). If you follow the steps below, this environment will be activated automatically.
 1. Run the config file to check you are up-to-date with the dependencies by running the `config.jl`. 
 2. Start the Pluto server by running `start.jl`.
 
